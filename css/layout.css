@@ -1,0 +1,48 @@
+#section_0{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#section_0 h1{
+    font-size: 3em;
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 50px;
+}
+
+
+.section .content{
+    margin-top: 30px;
+    display: grid;
+    grid-column-gap: 40px;
+    grid-row-gap: 60px; 
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.section .content button{
+    display: flex;
+}
+
+.section h1{
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* -------------------------------------------------------------
+RESPONSIVE PAGE
+------------------------------------------------------------- */
+
+#responsive_header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#responsive_header h1{
+    font-size: 3em;
+    color: black;
+    padding: 50px;
+}

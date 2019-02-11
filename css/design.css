@@ -1,0 +1,226 @@
+/* -------- BG-COLORS -------- */
+
+#section_1{
+    background-color: rgb(206, 206, 240);
+}
+
+#section_2{
+    background-color: rgb(245, 225, 201);
+}
+
+#section_3{
+    background-color: rgb(204, 245, 234);
+}
+
+#section_4{
+    background-color: rgb(255, 223, 223);
+}
+
+
+@media screen and (min-width: 640px) {
+    #section_1{
+        background-color: rgb(255, 223, 223);
+    }
+    
+    #section_2{
+        background-color: rgb(206, 206, 240);
+    }
+    
+    #section_3{
+        background-color: rgb(245, 225, 201);
+    }
+    
+    #section_4{
+        background-color: rgb(204, 245, 234);
+    }
+}
+
+@media screen and (min-width: 960px) {
+    #section_1{
+        background-color: rgb(204, 245, 234);
+    }
+    
+    #section_2{
+        background-color: rgb(255, 223, 223);
+    }
+    
+    #section_3{
+        background-color: rgb(206, 206, 240);
+    }
+    
+    #section_4{
+        background-color: rgb(245, 225, 201);
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    #section_1{
+        background-color: rgb(245, 225, 201);
+    }
+    
+    #section_2{
+        background-color: rgb(204, 245, 234);
+    }
+    
+    #section_3{
+        background-color: rgb(255, 223, 223);
+    }
+    
+    #section_4{
+        background-color: rgb(206, 206, 240);
+    }
+}
+
+/* -------- STYLE SECTIONS -------- */
+
+.section{
+    padding: 30px;
+    border: 1px;
+}
+
+.section p{
+    display: flex;
+    align-items: center;
+}
+
+.section button{
+    display: flex;
+    justify-content: center;
+}
+
+#section_0 {
+    background : url("../img_gorilles/1280x640_5.jpg") top center no-repeat;
+    min-height: 640px;
+    background-size: cover;
+}
+
+
+button{
+    padding: 15px;
+    border-style: none;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    font-size: 0.8em;
+}
+
+a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* -------- FOOTER -------- */
+
+footer{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: whitesmoke;
+    font-size: 1.2em;
+}
+
+footer img{
+    width: 60%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+footer div, .ul_footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: 180%;
+}
+
+.li_footer a{
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+}
+
+footer div p{
+    text-align: center;
+}
+
+/* -------------------------------------------------------------
+FLEXBOX PAGE
+------------------------------------------------------------- */
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+  
+.column {
+    flex: 20%;
+    max-width: 50%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 960px) {
+    .row {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      justify-content: space-evenly;
+     }
+    div.row {
+      width: 100%;
+    }
+}
+
+.grid { 
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 30px;
+    align-items: stretch;
+}
+
+.grid img {
+    box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+    width: 100%;
+}
+
+
+
+/* -------------------------------------------------------------
+RESPONSIVE PAGE
+------------------------------------------------------------- */
+
+hr{
+    color: black;
+    width: 60%;
+}
+
+.imgresponsive{
+    width: 100%;
+    height: auto;
+}
+
+.responsive_section {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.responsive_section div {
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
