@@ -224,3 +224,31 @@ hr{
     align-items: center;
     flex-direction: column;
 }
+
+
+/* -------------------------------------------------------------
+TRANSFORMS PAGE
+------------------------------------------------------------- */
+
+#div_transforms1 img{
+    width: 30%;
+    transform: rotate(20deg);
+}
+
+#div_transforms2 img{
+    width: 30%;
+    transform: skewY(-10deg);
+}
+
+#div_transforms3 img{
+    width: 30%;
+    transform: scaleY(1.5);
+}
+
+.div_transforms{
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-column-gap: 50px;
+    align-items: center;
+}
